@@ -13,7 +13,7 @@ else
 fi
 
 
-cmd="curl -X${method^^} 127.0.0.1:9200${path}"
+cmd="curl -X${method^^} 127.0.0.1:9200${path} "
 
 if [[ ${data} ]];then
     cmd+="-d \$'${data}' "
